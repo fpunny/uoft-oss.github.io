@@ -1,0 +1,113 @@
+* {
+    color: #fcfcfc;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    padding: 10px;
+    border-bottom: 0.01vh solid #fcfcfc5b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#membership li {
+    font-size: 2rem;
+}
+
+nav a:hover {
+    border-top: 0.1vh solid #fcfcfc;
+    color: #fcfcfc;
+}
+
+nav a {
+    border: 0.1vh solid rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: #fcfcfc;
+    transition-duration: 0.3s;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;    
+}
+
+
+nav .icons {
+    width: auto;
+    text-align: right;
+}
+
+nav .icon {
+    padding: 0.7rem;
+}
+
+.intro h1 {
+    font-size: 6vw;
+    font-weight: 100;
+    letter-spacing: 1vw;
+    margin-bottom: 1rem;
+}
+
+.event {
+    padding: 2rem;
+}
+
+.intro-bg {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(22, 20, 50, 0),
+        rgba(0, 0, 0, 1)
+    ), url("../images/placeholder.jpg");
+    padding: 10px;
+    margin-bottom: 8vh;
+}
+
+.event-title h5 {
+    text-align: right;
+    margin: 0px;
+    font-size: 2.5rem;
+}
+
+.event-desc p {
+    border-left: 0.1vh solid #fcfcfc;
+    padding-left: 3rem;
+    margin: 0px;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.intro p {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.black-div {
+    background-color: black;
+}
+
+.intro h5 {
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin-bottom: 5rem;
+}
+
+.container {
+    max-width: 80% !important;
+}
+
+footer {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-copyright {
+    border-top: 0.01vh solid #fcfcfc5b; 
+    padding: 10px; 
+}
