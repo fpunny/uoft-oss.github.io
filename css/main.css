@@ -18,14 +18,18 @@ body {
     background-color: black;
 }
 
-#events {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+section.container {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.event {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+section h1 {
+    margin-bottom: 1.5rem;
+}
+
+.event:not(:first-of-type) ~ .event {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .event-title {
@@ -49,11 +53,11 @@ body {
 nav a {
     text-decoration: none;
     color: #fcfcfc;
-    transition-duration: 0.2s;
-    
+    transition-duration: 0.4s;
 }
 
 nav a:not(.navbar-brand) {
+    border-top: 0.1vh solid black;
     padding-left: 10px !important;
 }
 
@@ -79,16 +83,18 @@ nav .icon {
 .intro-bg {
     background: linear-gradient(
         rgba(0, 0, 0, 0.9),
-        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 1)
     ), url("../images/placeholder.jpg");
     margin-bottom: 8vh;
     padding: 0;
+    background-size: auto 100%;
 }
 
 .intro p {
     font-size: 1rem;
     font-weight: 300;
+    margin-top: 2rem;
 }
 
 .intro h1 {
@@ -122,23 +128,68 @@ footer {
     padding-left: 1rem;
 }
 
-
-/* Larger than phablet */
-@media (min-width: 576px) {}
-
 /* Larger than tablet */
-@media (min-width: 768px) {
-    nav a:hover {
+@media (min-width: 760px) {
+
+
+    nav a:not(.navbar-brand):hover {
         border-top: 0.1vh solid #fcfcfc;
         color: #fcfcfc;
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    #membership li {
+        font-size: 1rem;
+    }
+
+    #membership ul {
+        padding-left: 3rem;
+    }
+
+    .event-desc {
+        border-top: none;
+        border-left: 0.1vh solid #fcfcfc;
+        font-weight: 300;
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .intro-bg {
+        background-size: 100%;
+    }
+
+    .event-title {
+        text-align: right;
+    }
+
+    .event-desc {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .intro h1 {
+        font-size: 6rem;
+    }
+
+    .subtitle {
+        padding-left: 0;
     }
 }
 
-
-
 /* Larger than desktop */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .nav-container {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    .navbar {
+        border-bottom: 0.01vh solid #fcfcfc5b;
+    }
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
-
