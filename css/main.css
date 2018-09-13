@@ -7,98 +7,99 @@ body {
     background-color: black;
 }
 
-nav {
-    padding: 10px;
+.navbar {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.nav-container {
     border-bottom: 0.01vh solid #fcfcfc5b;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+    background-color: black;
 }
 
-#membership li {
-    font-size: 2rem;
+#events {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-nav a:hover {
+.event {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.event-title {
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.event-desc {
     border-top: 0.1vh solid #fcfcfc;
-    color: #fcfcfc;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 nav a {
-    border: 0.1vh solid rgba(255, 255, 255, 0);
     text-decoration: none;
     color: #fcfcfc;
-    transition-duration: 0.3s;
-    padding: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.7rem;    
+    transition-duration: 0.2s;
+    
 }
 
+nav a:not(.navbar-brand) {
+    padding-left: 10px !important;
+}
+
+nav a:hover:not(.navbar-brand) {
+    background-color: gray;
+}
 
 nav .icons {
     width: auto;
-    text-align: right;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 nav .icon {
     padding: 0.7rem;
 }
 
-.intro h1 {
-    font-size: 6vw;
-    font-weight: 100;
-    letter-spacing: 1vw;
-    margin-bottom: 1rem;
-}
-
-.event {
-    padding: 2rem;
+.navbar-brand {
+    padding-left: 0px;
 }
 
 .intro-bg {
     background: linear-gradient(
         rgba(0, 0, 0, 0.9),
-        rgba(22, 20, 50, 0),
+        rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 1)
     ), url("../images/placeholder.jpg");
-    padding: 10px;
     margin-bottom: 8vh;
-}
-
-.event-title h5 {
-    text-align: right;
-    margin: 0px;
-    font-size: 2.5rem;
-}
-
-.event-desc p {
-    border-left: 0.1vh solid #fcfcfc;
-    padding-left: 3rem;
-    margin: 0px;
-    font-size: 2rem;
-    font-weight: 300;
+    padding: 0;
 }
 
 .intro p {
-    font-size: 1vw;
+    font-size: 1rem;
     font-weight: 300;
+}
+
+.intro h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: 1vw;
+    margin-bottom: 1vh;
 }
 
 .black-div {
     background-color: black;
-}
-
-.intro h5 {
-    font-size: 1.5vw;
-    font-weight: 300;
-    margin-bottom: 5rem;
-}
-
-.container {
-    max-width: 80% !important;
 }
 
 footer {
@@ -110,4 +111,34 @@ footer {
 .footer-copyright {
     border-top: 0.01vh solid #fcfcfc5b; 
     padding: 10px; 
+    font-size: 0.8rem;
 }
+
+#membership li {
+    font-size: 0.8rem;
+}
+
+#membership ul {
+    padding-left: 1rem;
+}
+
+
+/* Larger than phablet */
+@media (min-width: 576px) {}
+
+/* Larger than tablet */
+@media (min-width: 768px) {
+    nav a:hover {
+        border-top: 0.1vh solid #fcfcfc;
+        color: #fcfcfc;
+    }
+}
+
+
+
+/* Larger than desktop */
+@media (min-width: 992px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
