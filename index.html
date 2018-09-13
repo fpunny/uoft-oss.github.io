@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <meta charset="utf-8">
   <title>UofT Open Source Society</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 
   <!-- FONT -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600,100" rel="stylesheet" type="text/css">
@@ -14,36 +12,60 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
-  <div class="intro-bg">
-    <nav>
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Contributors</a>
-        <a href="#">Our Team</a>
-      </div>
-      <div class="icons">
-        <a class="icon" href="https://github.com/uoft-oss"><i class="fab fa-github"></i></a>
-        <a class="icon" href="#!"><i class="fab fa-facebook"></i></a>
-        <a class="icon" href="#!"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </nav>
+
+  <div class="intro-bg container-fluid">
+    <div class="nav-container container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="text-light nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="text-light nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="text-light nav-link" href="#">Contributors</a>
+              </li>
+              <li class="nav-item">
+                  <a class="text-light nav-link" href="#">The Team</a>
+              </li>
+              <li>
+                <div class="icons d-block d-lg-none d-xl-none">
+                  <a class="icon" href="https://github.com/uoft-oss"><i class="fab fa-github"></i></a>
+                  <a class="icon" href="#!"><i class="fab fa-facebook"></i></a>
+                  <a class="icon" href="#!"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="icons d-none d-lg-block d-xl-block">
+            <a class="icon" href="https://github.com/uoft-oss"><i class="fab fa-github"></i></a>
+            <a class="icon" href="#!"><i class="fab fa-facebook"></i></a>
+            <a class="icon" href="#!"><i class="fab fa-linkedin"></i></a>
+          </div>
+      </nav>
+    </div>
     <section class="container">
-      <div class="row" style="margin-top: 5vh">
-        <div class="one-half column intro">
+      <div class="row">
+        <div class="title intro">
           <h1><span class="black-div">Open</span></h1>
           <h1><span class="black-div">Source</span></h1>
           <h1><span class="black-div">Society</span></h1>
-          <div style="margin-top: 5vh">
-            <p>UofT Open Source Society is a student organization which aims to provide 
+          <div class="subtitle col-md-12 col-lg-12 col-xl-6">
+            <p>University of Toronto Open Source Society is a student organization which aims to provide 
                   students with the opportunity to gain open source project experience for their 
                   resume and portfolio, while also encouraging them to work as part of a student led software development team.
             </p>
@@ -54,12 +76,12 @@
   </div>
 
   <section id="membership" class="container">
-      <div class="row" style="margin-top: 5vh">
+      <div class="row">
           <h1><span class="black-div">Membership</span></h1>
       </div>
 
-      <div class="row" style="margin-top: 2vh">
-          <div class="ten columns offset-by-one">
+      <div class="row">
+          <div class="col-sm-12">
               <ul>
                   <li>You can join anytime at one of our events.</li>
                   <li>Membership in Open Source Society is open to all students, alumni, staff and faculty of the University of Toronto</li>
@@ -72,30 +94,41 @@
   </section>
 
   <section id="events" class="container">
-    <div class="row" style="margin-top: 5vh">
+    <div class="row">
         <h1><span class="black-div">Events</span></h1>
     </div>
-    <div class="event row" style="margin-top: 2vh">
-      <div class="event-title four columns">
-        <h5>University of Toronto</h5>
+    <div class="event row">
+      <div class="event-title col-sm-4">
+        University of Toronto
       </div>
-      <div class="event-desc eight columns">
-        <p>Open Source Society is a student organization which aims to provide 
+      <div class="event-desc col-sm-8">
+        Open Source Society is a student organization which aims to provide 
           students with the opportunity to gain open source project experience for their 
-          resume and portfolio, while also encouraging them to work as part of a student led software development team.</p>
+          resume and portfolio, while also encouraging them to work as part of a student led software development team.
       </div>
     </div>
 
-    <div class="event row" style="margin-top: 2vh">
-        <div class="event-title four columns">
-          <h5>University of Toronto</h5>
-        </div>
-        <div class="event-desc eight columns">
-          <p>Open Source Society is a student organization which aims to provide 
-            students with the opportunity to gain open source project experience for their 
-            resume and portfolio, while also encouraging them to work as part of a student led software development team.</p>
-        </div>
+    <div class="event row">
+      <div class="event-title col-sm-4">
+        University of Toronto
       </div>
+      <div class="event-desc col-sm-8">
+        Open Source Society is a student organization which aims to provide 
+          students with the opportunity to gain open source project experience for their 
+          resume and portfolio, while also encouraging them to work as part of a student led software development team.
+      </div>
+    </div>
+
+    <div class="event row">
+      <div class="event-title col-sm-4">
+        University of Toronto
+      </div>
+      <div class="event-desc col-sm-8">
+        Open Source Society is a student organization which aims to provide 
+          students with the opportunity to gain open source project experience for their 
+          resume and portfolio, while also encouraging them to work as part of a student led software development team.
+      </div>
+    </div>
 
       
   </section>
@@ -104,5 +137,9 @@
       Copyright © 2018 <a href="https://github.com/uoft-oss">UofT OSS</a>. All Rights Reserved.
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
