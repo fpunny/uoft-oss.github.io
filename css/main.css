@@ -15,7 +15,7 @@ body {
 
 .nav-container {
     border-bottom: 0.01vh solid #fcfcfc5b;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 section.container {
@@ -53,12 +53,16 @@ section h1 {
 nav a {
     text-decoration: none;
     color: #fcfcfc;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 
 nav a:not(.navbar-brand) {
-    border-top: 0.1vh solid black;
     padding-left: 10px !important;
+    border-top: 0.1vh solid rgba(0, 0, 0, 0);
+}
+
+.nav-item {
+    border-bottom: 0.1vh solid rgba(100, 100, 100, 0.5);
 }
 
 nav a:hover:not(.navbar-brand) {
@@ -76,8 +80,8 @@ nav .icon {
     padding: 0.7rem;
 }
 
-.navbar-brand {
-    padding-left: 0px;
+.navbar-brand img {
+    max-width: 2.7rem;
 }
 
 .intro-bg {
@@ -85,7 +89,7 @@ nav .icon {
         rgba(0, 0, 0, 0.9),
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 1)
-    ), url("../images/placeholder.jpg");
+    ), url("../images/background.jpg");
     margin-bottom: 8vh;
     padding: 0;
     background-size: auto 100%;
@@ -106,6 +110,7 @@ nav .icon {
 
 .black-div {
     background-color: black;
+    padding: 2px;
 }
 
 footer {
@@ -130,14 +135,6 @@ footer {
 
 /* Larger than tablet */
 @media (min-width: 760px) {
-
-
-    nav a:not(.navbar-brand):hover {
-        border-top: 0.1vh solid #fcfcfc;
-        color: #fcfcfc;
-        background-color: rgba(0, 0, 0, 0) !important;
-    }
-
     #membership li {
         font-size: 1rem;
     }
@@ -152,10 +149,6 @@ footer {
         font-weight: 300;
         padding-top: 0.5rem;
         font-size: 0.9rem;
-    }
-
-    .intro-bg {
-        background-size: 100%;
     }
 
     .event-title {
@@ -186,9 +179,29 @@ footer {
         border: none;
     }
 
-    .navbar {
-        border-bottom: 0.01vh solid #fcfcfc5b;
+    .intro-bg {
+        background-size: 100%;
     }
+
+    .nav-item {
+        border-bottom: 0.1vh solid rgba(100, 100, 100, 0);
+    }
+
+    .navbar-brand img {
+        transition-duration: 0.2s;
+    }
+
+    .navbar-brand img:hover {
+        padding: 1px;
+        filter: drop-shadow(1px 1px 1px gray);
+    }
+
+    nav a:not(.navbar-brand):hover {
+        border-top: 0.1vh solid rgba(255, 255, 255, 0.5);
+        color: #fcfcfc;
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+
 }
 
 /* Larger than Desktop HD */
