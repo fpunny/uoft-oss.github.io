@@ -11,6 +11,7 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px;
+    border: none;
 }
 
 .nav-container {
@@ -21,6 +22,8 @@ body {
 section.container {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
 }
 
 section h1 {
@@ -63,6 +66,10 @@ nav a:not(.navbar-brand) {
 
 .nav-item {
     border-bottom: 0.1vh solid rgba(100, 100, 100, 0.5);
+}
+
+.nav-item a{
+    color: #dcdcdc !important;
 }
 
 nav a:hover:not(.navbar-brand) {
@@ -133,6 +140,12 @@ footer {
     padding-left: 1rem;
 }
 
+#calendar {
+    width: 85%;
+    height: auto;
+}
+
+
 /* Larger than tablet */
 @media (min-width: 760px) {
     #membership li {
@@ -198,7 +211,7 @@ footer {
 
     nav a:not(.navbar-brand):hover {
         border-top: 0.1vh solid rgba(255, 255, 255, 0.5);
-        color: #fcfcfc;
+        color: #ffffff !important;
         background-color: rgba(0, 0, 0, 0) !important;
     }
 
