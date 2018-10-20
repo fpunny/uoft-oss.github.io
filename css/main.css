@@ -1,10 +1,12 @@
 * {
-    color: #fcfcfc;
+    color: #13172e;
+    /* color: #fcf6f3; */
     font-family: 'Raleway', sans-serif;
 }
 
 body {
-    background-color: black;
+    background-color: #fcf6f3;
+    /* background-color: #13172e; */
 }
 
 .navbar {
@@ -42,7 +44,7 @@ section h1 {
 }
 
 .event-desc {
-    border-top: 0.1vh solid #fcfcfc;
+    border-top: 0.1vh solid #13172e;
     font-weight: 300;
     padding-top: 0.5rem;
     font-size: 0.9rem;
@@ -55,7 +57,7 @@ section h1 {
 
 nav a {
     text-decoration: none;
-    color: #fcfcfc;
+    color: #fcf6f3;
     transition-duration: 0.2s;
 }
 
@@ -69,7 +71,7 @@ nav a:not(.navbar-brand) {
 }
 
 .nav-item a{
-    color: #dcdcdc !important;
+    color: #fcf6f3 !important;
 }
 
 nav a:hover:not(.navbar-brand) {
@@ -92,14 +94,11 @@ nav .icon {
 }
 
 .intro-bg {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.9),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1)
-    ), url("../images/background.jpg");
+    background: #1a203fff;
     margin-bottom: 8vh;
     padding: 0;
     background-size: auto 100%;
+    padding-bottom: 25px;
 }
 
 .intro p {
@@ -116,8 +115,14 @@ nav .icon {
 }
 
 .black-div {
-    background-color: black;
+    background-color: none;
+    color: #13172e;
     padding: 2px;
+    font-weight: 300;
+}
+
+.intro-bg .black-div, .intro-bg .title p{
+    color: #fcf6f3;
 }
 
 footer {
@@ -127,7 +132,7 @@ footer {
 }
 
 .footer-copyright {
-    border-top: 0.01vh solid #fcfcfc5b; 
+    border-top: 0.01vh solid #fcfcfc50; 
     padding: 10px; 
     font-size: 0.8rem;
 }
@@ -145,6 +150,9 @@ footer {
     height: auto;
 }
 
+.icon i {
+    color: #fcf6f3;
+}
 
 /* Larger than tablet */
 @media (min-width: 760px) {
@@ -158,7 +166,7 @@ footer {
 
     .event-desc {
         border-top: none;
-        border-left: 0.1vh solid #fcfcfc;
+        border-left: 0.1vh solid #13172e;
         font-weight: 300;
         padding-top: 0.5rem;
         font-size: 0.9rem;
@@ -211,7 +219,7 @@ footer {
 
     nav a:not(.navbar-brand):hover {
         border-top: 0.1vh solid rgba(255, 255, 255, 0.5);
-        color: #ffffff !important;
+        color: #fcf6f3 !important;
         background-color: rgba(0, 0, 0, 0) !important;
     }
 
