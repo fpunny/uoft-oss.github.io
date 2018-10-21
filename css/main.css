@@ -1,12 +1,10 @@
 * {
     color: #13172e;
-    /* color: #fcf6f3; */
     font-family: 'Raleway', sans-serif;
 }
 
 body {
     background-color: #fcf6f3;
-    /* background-color: #13172e; */
 }
 
 .navbar {
@@ -26,6 +24,10 @@ section.container {
     margin-bottom: 1rem;
     width: 100%;
     height: auto;
+}
+
+.title {
+    position: relative;
 }
 
 section h1 {
@@ -61,6 +63,11 @@ nav a {
     transition-duration: 0.2s;
 }
 
+.navbar-brand {
+    transition-duration: 0.5s;
+}
+
+
 nav a:not(.navbar-brand) {
     padding-left: 10px !important;
     border-top: 0.1vh solid rgba(0, 0, 0, 0);
@@ -94,11 +101,13 @@ nav .icon {
 }
 
 .intro-bg {
-    background: #1a203fff;
     margin-bottom: 8vh;
     padding: 0;
     background-size: auto 100%;
     padding-bottom: 25px;
+    background-color: #13172e;
+    position: relative;
+    overflow: hidden;
 }
 
 .intro p {
